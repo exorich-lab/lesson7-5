@@ -4,7 +4,7 @@ while to_order.size > 0 do    # Цикл который удаляет из ма
   puts to_order.to_s
   puts
   puts "Что купили:"
-  choice = gets.chomp.to_s
+  choice = gets.chomp
   if to_order.include? (choice)  # Если возвращаем true то просто удаляем запись из массива что сделает счетчик to_order.size меньше
     to_order.delete (choice)
   else
